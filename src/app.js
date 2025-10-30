@@ -33,7 +33,7 @@ const app = express();
 // Set the origin to your frontend's address: http://localhost:5173
 // 'credentials: true' is necessary for passing Firebase Auth tokens/cookies.
 const corsOptions = {
-    origin: 'http://localhost:5173', // <-- Set to your specific frontend URL!
+    origin: '*', // <-- Set to your specific frontend URL!
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'], // <-- Crucial for auth tokens
